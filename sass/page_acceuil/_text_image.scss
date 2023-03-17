@@ -1,0 +1,32 @@
+@import'../utils/mixines';
+@import'../utils/variables';
+
+/*.card{
+    position: relative;
+    .btn__card{
+        border: 2px solid ;
+        color: #008766;
+        background: $color-tertiary;
+        border: 5px solid $color-tertiary;
+         position: absolute;
+         right: 3%;
+        top: 4%;
+    }
+}*/
+.cards_new{
+    position: relative;
+    &::before{
+        content:"Nouveau" ;
+        position: absolute;
+        height: 1.5rem;
+        width: 5rem;
+        background: $color-tertiary;
+        border: 5px solid $color-tertiary;
+        color: #008766;
+        right: 3%;
+        top: 4%;
+        display: grid;
+        place-items: center;
+        
+    }
+}

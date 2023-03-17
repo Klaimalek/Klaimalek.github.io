@@ -1,0 +1,52 @@
+@import'../utils/variables';
+@import'../utils/variables';
+@import'../utils/animations';
+
+.liste_fonctionnement{
+    .liste_acceuil{
+        padding:10px;
+        @include display_column;
+        gap: 20px;
+        width: 100%;
+        counter-reset: number_step;
+        .element_liste{
+            cursor: pointer;
+            height: 60px;
+            &::before{
+                content: "" counter(number_step);
+                counter-increment: number_step;
+                color:white;
+                background-color:$color_primary ;
+                border-radius:50% ;
+                width: 15px;
+                margin-bottom:20px;
+                position: relative;
+                right: 20px;
+                padding: 5px;
+                text-align: center;
+                
+            }  
+            list-style-type: none;
+            @include  display_row;
+            padding: 20px 0 0 ;
+            background-color: $background_elt_liste;
+            border-radius: 20px;
+            flex-grow: 1;
+            font-size: small;
+            box-shadow: $box-shadow;
+            .fas{
+                color: rgb(116, 112, 112);
+                width: 8%;
+                padding-right: 10px;
+            }
+           &:hover{
+            background-color: lighten($color_primary, 33%);
+            
+            .fas{
+                color:$color_primary ;
+            }
+           }  
+        }
+
+    }
+}

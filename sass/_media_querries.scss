@@ -1,0 +1,94 @@
+@import './utils/mixines';
+@import './utils/variables';
+@import './utils/animations';
+
+@media screen and (min-width: 762px) and (max-width: 1400px){
+  .card{
+    width: 40%;
+  }
+  .cards_resto{
+    @include display_row;
+    justify-content: space-between;
+  }
+ 
+}
+
+// footer 
+@media screen and (min-width: 762px) and (max-width: 1400px){
+  .footer_identique{
+    text-align: center;
+    .img_footer{
+      font-size: xx-large;
+    }
+}
+}
+//loader
+@media screen and (min-width: 762px) and (max-width: 1400px){
+  .cercle_loader{
+    right: 40%;
+  }
+  .text_loading{
+    top:30%;
+    right:45% ;
+  }
+}
+//fonctionnement
+@media screen and (min-width: 762px) and (max-width: 1400px){
+  .fonctionnement{
+    
+    
+    .liste_acceuil{
+      width: 100%;
+      @include display_row;
+      
+      .element_liste{
+        width: 20%;
+        margin-left:10px;
+        .text{
+         font-size: small;
+        }
+        
+            
+        
+           
+          
+      }
+    }
+  }
+}
+// media querrires pour les pages menus
+@media screen and (min-width: 762px) and (max-width: 1400px){
+  .liste_menus{
+    width: 100%;
+    @include display_row;
+    justify-content: space-between;
+    
+    .elt_1{
+      width: 45%;
+    }
+  }
+ 
+}
+//media querriesz pour le header
+@media screen and (min-width: 762px) and (max-width: 1400px){
+  .header_page{
+  display: flex;
+  justify-content: space-between;
+  }
+}
+
+// 
+@media screen and (min-width: 762px) and (max-width: 1400px){
+  
+  .main_menu{
+    .resto_la_francaise{
+      background-color: white;
+      .img_resto_la_francaise{
+        
+      }
+    }
+    .description_menu{
+     
+    }
+  }
+}

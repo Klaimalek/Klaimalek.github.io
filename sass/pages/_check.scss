@@ -1,0 +1,43 @@
+@import'../utils/variables';
+@import'../utils/mixines';
+@import'../utils/animations';
+%check_style{
+    background-color: $color_tertiary;
+    color: $background_card;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    right: -3rem;
+    padding:5px ;
+    height: 100%; 
+    .fa-2x{
+    animation: rotate 2s infinite;
+    }
+}
+.menu_price{
+    overflow: hidden;
+    .price{
+      padding-bottom: 10px;
+      padding-right: 10px;
+    }
+    .check{
+        $btn_width:40px;
+        display: grid;
+        place-items: center;
+        flex-shrink: 0;
+        height: 100%;
+        background-color: $color_tertiary;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-right: -1* $btn_width;
+        width: $btn_width; 
+    
+        .fa-2x{
+            color: white;
+            animation: rotate 1s infinite;
+        }
+    }
+}
+.elt_1:hover .check{
+    margin-right: 0;
+}

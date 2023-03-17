@@ -1,0 +1,23 @@
+@import'../utils/mixines';
+.header_page{
+    margin-left: $margin;
+    @include display_row;
+    .icon_retour{
+        width: 20%;
+        padding-top: 20px;
+    
+    }
+    .header_lien{
+        color: #000000;
+    }
+    .logo_header_menu{
+    width: 70%;
+    
+    }
+    .logo_menu{
+        width:200px;
+        object-fit: contain;
+        height: 60px;
+        
+    }
+}

@@ -1,0 +1,108 @@
+@import'../utils/variables';
+@import'../utils/mixines';
+.main_menu{
+    @include display_column;
+    flex-wrap: wrap;
+    .resto_la_francaise{
+        background-color: $background_color;
+    .img_resto_la_francaise{
+        @include img_resto;
+    }
+    
+        
+.description_menu{
+    padding: $margin;
+    background-color: $background_color;
+    @include border_background_menu;
+    position: relative;
+    bottom: 30px;
+  .titre_resto_icon_coeur{
+    @include display_row;
+    justify-content: space-between;
+    margin-bottom: $margin;
+    .titre_menu{
+    
+        font-family: $font-title;
+        
+    }
+}  
+.detail_menu_1{
+.menu_1{
+
+margin-bottom:$margin ;
+//margin: $margin;
+.title_menu_1{
+    .text_menu{
+    font-weight: lighter;
+     
+    }
+.line_menu{
+    width: 50px;
+    height: 3px;
+    background-color: #99E2D0;
+    border: none;
+    margin-bottom :5px ;
+}  
+}
+
+.liste_menus{
+    margin-top: $margin;
+    .elt_1{
+        animation: dish 3s;
+        overflow: hidden;
+        //white-space: nowrap;
+        //text-overflow: ellipsis;
+        margin-bottom: 20px ;
+        background-color: $background_card;
+       // padding: 10px;
+        @include display_row;
+        justify-content: space-between;
+        
+        //padding: 10px 0 10px 10px;
+        border-radius:20px 20px 20px 20px ;
+        @include shadow;
+        .name_menu_1{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 70%;
+            //border: 2px solid;
+          h4,
+          p{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+        .menu_price{
+        //border: 2px solid red;
+        cursor: pointer;
+         //width:20%;
+         font-weight: bold;
+         display: flex;
+         align-items: flex-end;
+         .check{
+            //display: none;
+         }
+        }
+        .price{
+          
+        }
+        
+    }
+}
+}
+}}
+}
+}
+
+/*.titre_resto_icon_coeur{
+    @include display_row;
+    justify-content: space-between;
+    margin: $margin;
+
+}*/
+

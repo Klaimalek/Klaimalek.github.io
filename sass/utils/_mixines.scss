@@ -1,0 +1,62 @@
+@mixin shadow{
+    box-shadow: 6px 6px 6px #aaa;;
+}
+@mixin zoom{
+  transform: scale(1.1);
+}
+
+@mixin display_column{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+@mixin display_row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+@mixin display($direction){
+    flex-direction: $direction;
+}
+@mixin flex-direction($direction: row) {
+    @if $direction == row-reverse {
+      -webkit-box-direction: reverse;
+      -webkit-box-orient: horizontal;
+         -moz-box-direction: reverse;
+         -moz-box-orient: horizontal;
+    } @else if $direction == column {
+      -webkit-box-direction: normal;
+       -webkit-box-orient: vertical;
+         -moz-box-direction: normal;
+          -moz-box-orient: vertical;
+    } @else if $direction == column-reverse {
+      -webkit-box-direction: reverse;
+        -webkit-box-orient: vertical;
+         -moz-box-direction: reverse;
+           -moz-box-orient: vertical;
+    } @else {
+       -webkit-box-direction: normal;
+      -webkit-box-orient: horizontal;
+          -moz-box-direction: normal;
+         -moz-box-orient: horizontal;
+    }
+    -webkit-flex-direction: $direction;
+        -ms-flex-direction: $direction;
+            flex-direction: $direction;
+  }
+//@mixin background_btn{
+   // background-image: linear-gradient(to top, #9356dc, #b35cdc, #e86edb); ;
+//
+@mixin border_img{
+    border-radius: 10px 10px 0px 0px;
+}
+@mixin border_background_menu{
+  border-radius: 40px 40px 0px 0px;
+}
+@mixin img_resto{
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 160px;
+  max-height: 160px;
+  object-fit: cover;
+}

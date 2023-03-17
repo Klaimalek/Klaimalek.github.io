@@ -1,0 +1,86 @@
+@import'../utils/variables';
+@import'../utils/mixines';
+@import'../utils/animations';
+.loader{
+margin-top: -20px;
+background-image: $background_gradient;
+display: grid;
+place-items: center;
+width: 100%;
+height:  100%;
+position: fixed;
+z-index: 999;
+animation: loader 2s ease-in-out 2s forwards;
+
+}
+.cercle_loader{
+  position: absolute;
+  top: 50%;
+  right:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  line-height: 150px;
+  font-family: sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color:white;
+  text-transform:uppercase;
+  text-shadow:0 0 10px #fff000;
+  
+
+}
+.cercle_loader:before
+{
+  content:'';
+  position:absolute;
+  top:-3px;
+  left:-3px;
+  width:100%;
+  height:100%;
+  border-top:3px solid $color_secondary;
+  border-right:3px solid $color_secondary;
+  border-radius:50%;
+  animation:animateC 2s linear infinite;
+}
+.cercle_loader {
+  span
+  { 
+  display:block;
+  position:absolute;
+  top:calc(50% - 2px);
+  left:50%;
+  width:50%;
+  height:4px;
+  background:transparent;
+  transform-origin:left;
+  animation:animate_2 2s linear infinite;
+  }
+}
+span:before
+{
+  content:'';
+  position:absolute;
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background:white;
+  top:-6px;
+  right:-8px;
+}
+.text_loading{
+  position: absolute;
+  text-align: center;
+  right:40%;
+  left:40%;
+  color: white;
+  font-family: sans-serif;
+  
+  animation: myAnim 4s ease  forwards;
+}
+
+
+
+

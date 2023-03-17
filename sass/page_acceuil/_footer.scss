@@ -1,0 +1,32 @@
+@import'../utils/variables';
+@import'../utils/mixines';
+
+.footer_identique{
+    padding-left: $margin;
+    background-color: $background_footer;
+    @include display(column);
+    .img_footer{
+        color: $background_card;
+        font-family: $font-title;
+        margin-bottom: 10px;
+        
+        
+    }
+    .liste_footer{
+        @include display(column);
+        width: 100%;
+        .infos_liste{
+            list-style: none;
+            .element_footer{
+                margin-bottom: 10px;
+                .lien_footer{
+                    color:$background_card;
+                    text-decoration: none;
+                    
+                }
+            }
+        }
+    }
+
+   
+}
